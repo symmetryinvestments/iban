@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/iban
+iban.so
+iban.dylib
+iban.dll
+iban.a
+iban.lib
+iban-test-*
+*.exe
+*.o
+*.obj
+*.lst
