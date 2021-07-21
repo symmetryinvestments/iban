@@ -1,6 +1,6 @@
 # IBAN
 
-![CI](https://github.com/burner/iban/workflows/ci/badge.svg)
+![CI](https://github.com/symmetryinvestments/iban/workflows/ci/badge.svg)
 
 IBAN is a package that contains functions and static data to work with
 IBAN (International Bank Account Number) as well as static data about banks.
