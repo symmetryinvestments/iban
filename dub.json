@@ -1,0 +1,10 @@
+{
+	"authors": [
+		"Robert Schadek"
+	],
+    "targetType": "library",
+	"copyright": "Copyright © 2021, Symmetry Investments",
+	"description": "A package for handling IBAN numbers",
+	"license": "LGPL3",
+	"name": "iban"
+}
