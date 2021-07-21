@@ -60,3 +60,14 @@ struct IBAN {
 }
 
 ```
+
+This package uses the data from the excellent github.com:mdomke/schwifty.git
+package.
+
+Run
+
+```sh
+dmd -run parser.d
+```
+
+to update to a new version to schwifty.
