@@ -1,4 +1,4 @@
-module iban.iban;
+module iban.ibans;
 
 import iban.structures;
 

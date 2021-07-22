@@ -275,8 +275,8 @@ void main() {
 	}
 
 	{
-		auto f = File("source/iban/iban.d", "w");
-		f.writeln("module iban.iban;\n");
+		auto f = File("source/iban/ibans.d", "w");
+		f.writeln("module iban.ibans;\n");
 		f.writeln("import iban.structures;\n");
 		f.writeln("IBANData[string] getIBANs() @safe {");
 		f.writeln("\tstatic bool hasBeenInited = false;");

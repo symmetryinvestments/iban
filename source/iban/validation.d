@@ -12,7 +12,7 @@ import std.utf : byChar;
 import std.stdio;
 import std.format;
 
-import iban.iban;
+import iban.ibans;
 import iban.structures;
 
 @safe:

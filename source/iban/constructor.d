@@ -6,7 +6,7 @@ import std.stdio;
 
 import iban.validation;
 import iban.structures;
-import iban.iban;
+import iban.ibans;
 
 @safe:
 

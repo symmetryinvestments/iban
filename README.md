@@ -6,6 +6,8 @@ IBAN is a package that contains functions and static data to work with
 IBAN (International Bank Account Number) as well as static data about banks.
 
 ```D
+import iban;
+
 IBANData[string /* ISO two digit country code */] getIBANs();
 Bank[] getBanks();
 
