@@ -261,17 +261,23 @@ void main() {
 		f.writeln("module iban.banks;\n");
 		f.writeln("import std.typecons : Nullable;\n");
 		f.writeln("import iban.structures;\n");
-		f.writeln("Bank[] getBanks() @safe {");
+		f.writeln("Bank[] getBanks() @safe nothrow {");
 		f.writeln("\tstatic bool hasBeenInited = false;");
 		f.writeln("\tstatic Bank[] ret;");
 		f.writeln("\tif(!hasBeenInited) {");
-		foreach(b; parseBanks()) {
-			f.writefln("\t\tret ~= %s;", toString!Bank(b));
-		}
+		f.writeln("\t\tforeach(ref bank; allBanks) {");
+		f.writeln("\t\t\tret ~= bank;");
+		f.writeln("\t\t}");
 		f.writeln("\t\thasBeenInited = true;");
 		f.writeln("\t}");
 		f.writeln("\treturn ret;");
-		f.writeln("}");
+		f.writeln("}\n");
+		f.writeln("@system:");
+		f.writeln("static private immutable Bank[] allBanks = cast(immutable) [");
+		foreach(b; parseBanks()) {
+			f.writefln("\t%s,", toString!Bank(b));
+		}
+		f.write("];\n\n");
 	}
 
 	{
