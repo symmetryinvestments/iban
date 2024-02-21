@@ -16,8 +16,7 @@ Bank[] getBanks() @safe nothrow {
 	return ret;
 }
 
-@system:
-static private immutable Bank[] allBanks = cast(immutable) [
+static private const Bank[] allBanks = [
 	Bank("HR", true, "HAABHR22", "2500009", Nullable!(string).init, "ADDIKO BANK d.d. Zagreb", "ADDIKO BANK d.d. Zagreb"),
 	Bank("HR", true, "KREZHR2X", "2481000", Nullable!(string).init, "AGRAM BANKA d.d. Zagreb", "AGRAM BANKA d.d. Zagreb"),
 	Bank("HR", true, "SKOVHR22", "4133006", Nullable!(string).init, "BANKA KOVANICA d.d. Varaždin", "BANKA KOVANICA d.d. Varaždin"),
